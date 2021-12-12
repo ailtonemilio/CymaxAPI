@@ -1,0 +1,12 @@
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\bin\Debug\net5.0\WebApplication.Shared.deps.json
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\bin\Debug\net5.0\WebApplication.Shared.dll
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\bin\Debug\net5.0\ref\WebApplication.Shared.dll
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\bin\Debug\net5.0\WebApplication.Shared.pdb
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.AssemblyInfoInputs.cache
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.AssemblyInfo.cs
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.dll
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\ref\WebApplication.Shared.dll
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.pdb
+C:\Users\ailto\source\repos\CymaxDevelopmentTest\WebApplication.Shared\obj\Debug\net5.0\WebApplication.Shared.csproj.AssemblyReference.cache
