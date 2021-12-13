@@ -9,5 +9,6 @@ namespace WebApplication.Shared
     public interface IPackageRepository
     {
         Task<Package> GetTotal(string Warehouse, string Destination, int[] Dimensions, int Discount);
+        Package GetBestDeal(List<Package> PackageList);
     }
 }

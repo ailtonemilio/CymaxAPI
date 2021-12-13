@@ -18,11 +18,11 @@ namespace WebApplication.API3.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<Package>> GetValuePackage(string Warehouse, string Contact, [FromQuery] int[] Dimensions)
+        public async Task<ActionResult<Package>> GetValuePackage(string Destination, string Source, [FromQuery] int[] Package)
         {
             try
             {
-                var result = await _packageRepository.GetTotal(Contact, Warehouse, Dimensions, 13);
+                var result = await _packageRepository.GetTotal(Source, Destination, Package, 13);
                 return result;
             }
             catch (Exception)

@@ -34,7 +34,6 @@ namespace WebApplication.MainAPI.Controllers
                 
                 Package pk = new Package();
                 var listPackage = new List<Package>();
-                decimal dpk1, dpk2, dpk3 = 0;
                 string dimSize = "";
 
                 for (int i = 0; i < Dimensions.Count(); i++)
@@ -64,7 +63,6 @@ namespace WebApplication.MainAPI.Controllers
                         pk.Total
                     ));
                 }
-
 
                 var API2 = new HttpClient();
                 API2.BaseAddress = new System.Uri("https://localhost:44328/");
@@ -112,8 +110,7 @@ namespace WebApplication.MainAPI.Controllers
                     ));
                 }
 
-                var minValue = listPackage.Min(p => p.Total);
-                pk = listPackage.Where(c => c.Total == minValue).FirstOrDefault();
+                pk = _packageRepository.GetBestDeal(listPackage);
 
                 return pk;
             }
