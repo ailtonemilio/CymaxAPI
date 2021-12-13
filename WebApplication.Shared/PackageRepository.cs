@@ -8,6 +8,14 @@ namespace WebApplication.Shared
 {
     public class PackageRepository : IPackageRepository
     {
+        public Package GetBestDeal(List<Package> PackageList)
+        {
+            Package pk = new Package();
+            var minValue = PackageList.Min(p => p.Total);
+            pk = PackageList.Where(c => c.Total == minValue).FirstOrDefault();
+            return pk;
+        }
+
         public async Task<Package> GetTotal(string Source, string Destination, int[] Dimensions, int Discount)
         {
             Package pk = new Package();
@@ -18,7 +26,8 @@ namespace WebApplication.Shared
 
             pk.SourceAddress = Source;
             pk.DestinationAddress = Destination;
-            pk.PriceSize = 15;
+            //Price per area of the package
+            pk.PriceSize = 2;
 
             foreach (var item in Dimensions)
             {
