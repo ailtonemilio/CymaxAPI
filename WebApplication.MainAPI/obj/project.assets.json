@@ -253,11 +253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ailto\\source\\repos\\CymaxDevelopmentTest\\WebApplication.MainAPI\\WebApplication.MainAPI.csproj",
+      "projectUniqueName": "C:\\Projects\\Git\\CymaxAPI\\WebApplication.MainAPI\\WebApplication.MainAPI.csproj",
       "projectName": "WebApplication.MainAPI",
-      "projectPath": "C:\\Users\\ailto\\source\\repos\\CymaxDevelopmentTest\\WebApplication.MainAPI\\WebApplication.MainAPI.csproj",
+      "projectPath": "C:\\Projects\\Git\\CymaxAPI\\WebApplication.MainAPI\\WebApplication.MainAPI.csproj",
       "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ailto\\source\\repos\\CymaxDevelopmentTest\\WebApplication.MainAPI\\obj\\",
+      "outputPath": "C:\\Projects\\Git\\CymaxAPI\\WebApplication.MainAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -279,8 +279,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ailto\\source\\repos\\CymaxDevelopmentTest\\WebApplication.Shared\\WebApplication.Shared.csproj": {
-              "projectPath": "C:\\Users\\ailto\\source\\repos\\CymaxDevelopmentTest\\WebApplication.Shared\\WebApplication.Shared.csproj"
+            "C:\\Projects\\Git\\CymaxAPI\\WebApplication.Shared\\WebApplication.Shared.csproj": {
+              "projectPath": "C:\\Projects\\Git\\CymaxAPI\\WebApplication.Shared\\WebApplication.Shared.csproj"
             }
           }
         }

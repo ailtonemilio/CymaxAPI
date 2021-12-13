@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using WebApplication.Shared;
 
 
@@ -88,13 +90,17 @@ namespace WebApplication.MainAPI.Controllers
                 var API3 = new HttpClient();
                 API3.BaseAddress = new System.Uri("https://localhost:44355/");
                 API3.DefaultRequestHeaders.Accept.Clear();
-                API3.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                API3.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
 
                 HttpResponseMessage response3 = await API3.GetAsync(Url);
 
                 if (response3.IsSuccessStatusCode)
                 {
-                    pk = JsonConvert.DeserializeObject<Package>(await response3.Content.ReadAsStringAsync());
+                    var content = await response3.Content.ReadAsStringAsync();
+
+                    XmlSerializer serializer = new XmlSerializer(typeof(Package), new XmlRootAttribute("Package"));
+                    StringReader stringReader = new StringReader(content);
+                    pk = (Package)serializer.Deserialize(stringReader);
 
                     listPackage.Add(new Package
                     (
