@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +29,7 @@ namespace WebApplication.API3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IPackageRepository, PackageRepository>();
+            services.AddMvcCore(options => options.OutputFormatters.Add(new XmlSerializerOutputFormatter()));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

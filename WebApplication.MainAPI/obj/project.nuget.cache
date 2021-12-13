@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jeUaqP8086C9vyf9SWf/dW3u671tqdURomsKNexZxJC+Tbn2hBZ5DzGeURwWSHMc4GkpIycJVOfwJE0VsanEoA==",
+  "dgSpecHash": "5Pw5uCPL8bGDiUUdExVUw17KngDN+I4iPfQPAKAQ3SBAtAWewtD2ebHgJXvR9EgDeW3Dm/YeJ48Ao64fJNbJog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ailto\\source\\repos\\CymaxDevelopmentTest\\WebApplication.MainAPI\\WebApplication.MainAPI.csproj",
+  "projectFilePath": "C:\\Projects\\Git\\CymaxAPI\\WebApplication.MainAPI\\WebApplication.MainAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
